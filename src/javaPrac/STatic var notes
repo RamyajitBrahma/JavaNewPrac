@@ -1,0 +1,48 @@
+Static example are in BasicsJavaSecondClassNew , BasicsJavaNew and StaticVar
+
+1) //Static methods can be called straight away if it is inside the same class 
+2) //IF method is notstatic then have to create an object of the class
+3) // object of the class also show sstatic methods and vars but it shows warnings
+4) //Callimng static method of another class inside same package but if from another package u need to import the package and class
+5) // any method in a class static or non static can  be called directly in a class if it is in the same class
+
+
+6)//the moment a class object is created java compikles the whole code from beginning which includes declaring and initilaising the vars at class level
+9)// class var - all static var are class var .. static var cant be declared inside a method it has to be declared at class level
+10)//we declare var as static when we want all the objects crerated for the class to share the same space for that object for normal instance var new space is created for each object created
+11) main framework example of stati var and methods u will find in listeners class
+12 ) We have used static method in listeners class bcz we dnt want to create object of the class everytime and need to directly access the methods and vars of that class with class name
+
+13) static var cant be declared inside any method(static or nomn static) becuase static var can only be declared at class level
+14) If a variable is declared as non static at class level that cant be used inside a static method bcz it is non static
+
+15 ) Abstract class object cant be create so if we want to access any method of an abstract class directly we can need to make it static and then access it  by classname.methodname
+
+
+Access modifiers
+
+1)Default modifier if used then that method or var can e used in any class within the same package by creating the object of that class but
+ it cant be used in any other class outside the package even if u import that class or even if you inherit. If you domnt mention explicitly the access modifier then java automatically takes it as default modifier
+ 2) public if you mention u an access it from any class within same and different packages by creating the class obj and importing the package (if different package)
+ 3) cant access private methods ir vars outside the class where it is defined, even if it is inside the same package. Even the class object cant access those private var or methods , nor csn u do that with inheritance
+ 4)// cant use private var inside a  method, inside a method al vars are default, only can declare a var as final nothing else , cant use public/private/protected
+ 5)  // can call a private method or var inside a public class of the same class
+ 6) Generally we make the page object classes/normal classes  vars private and use a public method to access those .. so that no one can directly touch the vars inside the class
+ 7) Protected is same as Default + one extra Fearute
+ 8) Protected like deafult can be accessed anywhere in any class inside the same package by creating class obj or inheritacne
+ 9) Protected unlike default can also nbe accessed from classes from different package but only via inheritance directly or via creating class of the child Obj
+ 10) To elaborate point 9 only the Child class object from another package that inherits the parent class containing the protected var or method
+ can access the protected var or method , but if you create an object of the parent class it cant access those .
+ 11) Child class can also directly access the protected var and methods bcz it has inherited thre parent class 
+ 12) Only child class object that inherits the parent class (containing the protected var or method) can access the protected var and methods , parent clas object cant
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
