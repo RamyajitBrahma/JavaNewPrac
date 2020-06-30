@@ -16,6 +16,14 @@ public class ArrayPrac {
           System.out.println(aaArr[1]);
           System.out.println(aaArr.length);
           
+         String splitString = "I;am;goodboy";
+         String[] splitStringArr = splitString.split(";");
+         String splitStringArr2[] = splitString.split(";");   // can declare both ways
+         System.out.println(splitStringArr[0]);
+         System.out.println(splitStringArr2[0]);
+         
+         String str1 = "jit.txt";
+         System.out.println(str1.toLowerCase().endsWith(".txt"));
 	}
 	
 
