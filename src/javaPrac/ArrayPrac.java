@@ -24,6 +24,18 @@ public class ArrayPrac {
          
          String str1 = "jit.txt";
          System.out.println(str1.toLowerCase().endsWith(".txt"));
+         
+         //Converting sa string to int - it is oike int in vb
+         String myString = "2";
+         int myInt = Integer.parseInt(myString);
+         System.out.println(myInt);
+         myInt=myInt+3; // this addition is possi le bcz it is converted to int
+         System.out.println(myInt);
+         
+       //Converting sa int to String - it is like Cstr in vbscript
+         Integer myInt1 = 4;
+         String myString1 = myInt1.toString();
+         System.out.println(myString1);
 	}
 	
 
