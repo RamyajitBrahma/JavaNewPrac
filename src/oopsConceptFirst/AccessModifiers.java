@@ -6,6 +6,7 @@ public class AccessModifiers extends AccessModiProtected {
     
 	private int privateInt = 4;
 	String normalStr = "Normal String";
+
 	
 	public void protectedClassExp() {
 		

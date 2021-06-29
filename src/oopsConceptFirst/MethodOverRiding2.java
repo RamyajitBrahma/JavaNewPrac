@@ -8,4 +8,8 @@ public class MethodOverRiding2 {
 	public void getDataStr(String a) {
 		System.out.println("Methodoverirding getData string"+a);
 	}
+	
+	final void getDataFinal() {
+		System.out.println("Final blocm of parent class");
+	}
 }

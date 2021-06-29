@@ -1,10 +1,12 @@
 Static example are in BasicsJavaSecondClassNew , BasicsJavaNew and StaticVar
 
-1) //Static methods can be called straight away if it is inside the same class 
-2) //IF method is notstatic then have to create an object of the class
+1) //Static methods can be called straight away inside static void main method if it is inside the same class 
+2) Any non static method can be called inside another non static method directly if it inside the same class wthout creating object of the class 
+2) //IF method is notstatic then have to create an object of the class to be called inside another static method
 3) // object of the class also show sstatic methods and vars but it shows warnings
 4) //Callimng static method of another class inside same package but if from another package u need to import the package and class
-5) // any method in a class static or non static can  be called directly in a class if it is in the same class
+5) // any method in a class static or non static can  be called directly in a class if it is in the same class , but a non static method csnt be called directly inside a  static method
+    but vice versa is allowed
 
 
 6)//the moment a class object is created java compikles the whole code from beginning which includes declaring and initilaising the vars at class level
@@ -30,15 +32,21 @@ Access modifiers
  6) Generally we make the page object classes/normal classes  vars private and use a public method to access those .. so that no one can directly touch the vars inside the class
  7) Protected is same as Default + one extra Fearute
  8) Protected like deafult can be accessed anywhere in any class inside the same package by creating class obj or inheritacne
- 9) Protected unlike default can also nbe accessed from classes from different package but only via inheritance directly or via creating class of the child Obj
+ 9) Protected unlike default can also nbe accessed from classes from different package but only via inheritance directly or via creating obj of the child class
  10) To elaborate point 9 only the Child class object from another package that inherits the parent class containing the protected var or method
- can access the protected var or method , but if you create an object of the parent class it cant access those .
+ can access the protected var or method , but if you create an object of the parent class it cant access those . -- Check BascicsJavaProtectedClasspRac.java class for explanation
  11) Child class can also directly access the protected var and methods bcz it has inherited thre parent class 
  12) Only child class object that inherits the parent class (containing the protected var or method) can access the protected var and methods , parent clas object cant
+ 13 Provate or public or static modifiers can only be used at class level for methods or variables .. these access modifeirs doesnt work inside a method 
+ Example : try to define a Public String str1 = "ddd" isnide a method of a class it will throw error remove access modifier we shd define it as String str1 = "ddd";
+ Public String str1 = "ddd"  -- This defintion inside a method is invaloid but valid at class level
+ String str1 = "ddd" -- valid both atr class level and method level
  
+ Super keyword used to access methods, vars , constructors of parent class Syntax super.Varname, super.methodname, super()
+ Supe() this is for accesing parent constructor and can only  be used in side the child constructor nd remember that should be the first line in the child constructor orelse it wont woerrek
  
- 
- 
+ This keyword is oly for variables and not methods.. it is used to access variables at Class level from inside a method. So there is a var with same name (Ex:a) inside a method and at class level in order to print the class level variable from inside the method use this.a
+ Final can be used for vars methods and class  .. if final is used for class it cant be inherited from amy other class nd for method if it is final it cant be overrideen and for var also it can be changed
  
  
  

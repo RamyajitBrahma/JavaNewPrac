@@ -3,6 +3,7 @@ package javaPrac;
 public class BasicsJavaNew {
    
 	static int aa = 2;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -13,6 +14,7 @@ public class BasicsJavaNew {
 		getDataStatic(); //Static methods can be called straight away if it is inside the same class 
 		BasicsJavaNew.getDataStatic();
 		BasicsJavaNew basicClassObj = new BasicsJavaNew(); //IF method is notstatic then have to create an object of the class
+		basicClassObj.getProtectedMethod(); //can create an object of the parent class and access protected methods from inside the parent class
 		basicClassObj.getData();
 		basicClassObj.getDataStatic(); // object of the class also show sstatic methods and vars but it shows warnings
 		System.out.println(basicClassObj.aa); // object of the class also show sstatic methods and vars but it shows warnings
@@ -41,5 +43,9 @@ public class BasicsJavaNew {
 	public static void getDataStatic() {
 		int b = 3;
 		System.out.println("Static Data: "+b);
+	}
+	
+	protected void getProtectedMethod() {
+		System.out.println("private data");
 	}
 }

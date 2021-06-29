@@ -1,9 +1,12 @@
 package oopsConceptFirst;
 
+
+
 public class Methodoverirding extends MethodOverRiding2 {
     
 	String zz = "Jit";
 	static Integer zint = 3;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String zz = "Main get ZZ";
@@ -25,6 +28,10 @@ public class Methodoverirding extends MethodOverRiding2 {
 	    MethodOverRiding2 objA = new MethodOverRiding2();
 	    objA.getDataStr("ddd");
 	}
+	
+	//public void getDataFinal() { //can use the same method name here bcz there is a final method with the same name in the parent class
+		//System.out.println("Final blocm of child class");
+	//}
 	
 
 }
